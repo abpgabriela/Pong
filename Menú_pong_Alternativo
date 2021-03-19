@@ -12,3 +12,23 @@ public class Menu_Pong {
 	}
 
 }
+
+[[[[[[[[[[[ESTE MENÚ ES LA EXPLICACIÓN AL DE ARRIBA]]]]]]]]]]]]]]]]]]]]]]
+_________________________________________________________________________
+public class Menu_Complejo {	//Este menú permite introducir datos de tipo int, l
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 String Nombre_usuario = JOptionPane.showInputDialog("Introduce tu nombre, por favor");
+//		 cadena	variable es igual a método.MuestraDialógo(Mensaje)	((SOLO FUNCIONA CON STRINGS))
+		 String Edad = JOptionPane.showInputDialog("Introduce tu edad, por favor");
+/*		 Para modificar la inicialización de esta variable solo tenemos que usar el objeto parseInt(edad)
+ * 		 del paquete integer
+ */
+		 int edad_usuario = (byte) Integer.parseInt(Edad);	//paquete java.lang / Integer /	El método
+		 													//utilizado parseInt solo puede utilizarse
+		 													//con enteros, pero si es un número más
+		 													//bajo que 113 se puede convertir en byte
+		 													//"parseando" el int a byte
+		 System.out.println("Hola " + Nombre_usuario + " el año que viene tendrás " + (edad_usuario + 1) + " años");
+}
