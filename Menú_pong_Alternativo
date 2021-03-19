@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+public class Menu_Pong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String Nombre_usuario = JOptionPane.showInputDialog("Nombre_de_usuario");
+		String Edad = JOptionPane.showInputDialog("Edad_de_usuario");
+		int edad_usuario = Integer.parseInt(Edad);
+		System.out.println("Su nombre " + Nombre_usuario);
+		System.out.print("Su edad el año que viene " + (edad_usuario + 1));
+		
+	}
+
+}
